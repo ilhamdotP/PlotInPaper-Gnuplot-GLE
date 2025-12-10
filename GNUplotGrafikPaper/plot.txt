@@ -1,0 +1,26 @@
+f(x)=a**2/(4*E**2*(sin(x/2))**4)
+g(x)=(Ef/E)*((cos(x/2))**2-(q**2/(2*M**2))*(sin(x/2))**2)
+h(x)=f(x)*g(x)
+a=1./137.
+E=100.
+Ef=100.
+q=10.
+M=10.
+plot [0.1:6.18] h(x)
+
+
+# set term post
+# set size 0.6,0.6
+# set key top left
+# set output 'grafik.ps'
+# plot 'interpolate.dat' with lines, 'data.dat' 
+# replot
+
+# set term png
+# set size 0.6,0.6
+# set key top left
+# set output 'grafik.png'
+# replot
+
+# set term  wxt
+# set term qt

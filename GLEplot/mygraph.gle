@@ -1,0 +1,10 @@
+!mygraph.gle - Some of the simple graph drawing commands
+size 10 13                              !Sets the size of the paper
+begin graph
+        size 10 10                      !Sets the size of the graph
+        data mydata.dat d1=c1,c2 d2=c1,c3                !Reads data from mydata.dat
+        title "My first Graph" hei 1 color red dist 2
+        yaxis min 0                     !Sets the y axis to zero
+        d1 line marker circle msize 0.2
+		d2 line lstyle 2 lwidth 0.1 color red marker dot msize 0.2
+end graph 

@@ -1,0 +1,7 @@
+
+size 12 8
+
+begin graph
+    let d1 = (x-2)^2 from 0 to 4 step 0.1
+    d1 line color red
+end graph

@@ -1,0 +1,14 @@
+!mygraph.gle - Some of the simple graph drawing commands
+size 10 10                              !Sets the size of the paper
+amove 0.5 0.5
+begin graph
+        size 10 10                      !Sets the size of the graph
+        data mygraph_2.dat d1=c4,c1                 !Reads data 
+		yaxis min 0 max 300 dticks 50 hei .5
+		xaxis min 0 max 1200 dticks 200 hei .5
+        ytitle " P (MeV fm^{-3})"  hei .5
+		xtitle "\epsilon (MeV fm^{-3})" hei .5
+        d1 line line lstyle 3 lwidth 0.07 color black
+		!key pos tl hei 0.4
+end graph 
+!marker circle msize 0.2 
